@@ -59,9 +59,10 @@ export GIT_CONFIG_GLOBAL=~/.gitconfig
 export NVM_DIR="$HOME/.nvm"
 
 export LESS=-Ri
+export EDITOR=/usr/bin/nvim
 
 alias rg='rg --no-ignore-vcs --no-require-git'
-alias e="proj ."
+alias e="$EDITOR"
 alias l="ls -ltrhFa"
 alias ll="ls -lFa | less"
 alias lr="ls -ltFar"
@@ -102,8 +103,6 @@ export HISTFILESIZE=10000
 export HISTCONTROL=ignoredups:erasedups
 # When the shell exits, append to the history file instead of overwriting it
 shopt -s histappend
-
-export EDITOR=/usr/bin/vim
 
 # no git branch
 #PROMPT_COMMAND='RET=$?; PS1="\[\e[32m\]\u@\h\[\e[0m\] \w: "'
